@@ -1,0 +1,43 @@
+                    /* ABOUT US  */
+
+.about__container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    padding: 1.5rem 1rem;
+}
+
+        /* TABLET */
+@media(min-width: 720px){
+    .about{
+        margin-top: 6.854rem;
+        margin-bottom: 6.854rem;
+    }
+}
+
+        /* PC  */
+@media(min-width: 1440px){
+    .about__container{
+        display: grid;
+        grid-template-areas:
+        "title image"
+        "text image"
+        "button image";
+        grid-template-columns: 55% 40%;
+        grid-template-rows: 20% 40% 12%;
+        column-gap: 1.5rem;
+        justify-content: center;
+    }
+    .about__container-text{
+        grid-area: title;
+    }
+    .about__container h3{
+        grid-area: text;
+    }
+    .about__container button{
+        grid-area: button;
+    }
+    .about__container-image{
+        grid-area: image;
+    }
+}

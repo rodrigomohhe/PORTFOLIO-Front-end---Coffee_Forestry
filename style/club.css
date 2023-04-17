@@ -1,0 +1,100 @@
+                    /* CLUB */
+                
+.club{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    text-align: right;
+    row-gap: 2.8rem;
+    margin-bottom: 2rem;;
+
+}
+.club__banner{
+    display: flex;
+    align-self: center;
+
+}
+.club__fun-text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    row-gap: .5rem;
+}
+.club__tutorial{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 1.5rem;
+}
+.club__list{
+    display: flex;
+    flex-direction:column;
+    row-gap: 1.5rem;
+    text-align: center;
+}
+.club__list-item{
+    color: white;
+}
+.club__list-number{
+    text-decoration: solid underline goldenrod 4px;
+}
+
+        /* TABLET */
+@media(min-width: 720px){
+    .club{
+        margin-top: 5rem;
+        margin-bottom: auto;
+    }
+    .club__banner-first{
+        width: 45%;
+    }
+    .club__banner-second{
+        width: 55%;
+    }
+}
+
+        /* PC  */
+@media(min-width: 1440px){
+    .club{
+        display: grid;
+        grid-template-areas:
+        "banner title"
+        "banner text"
+        "banner button"
+        "tutorial tutorial";
+        grid-template-columns: 40% 55%;
+        grid-template-rows: 20% 10% 5% 30%;
+        text-align: left;
+        column-gap: 1.5rem;
+        margin-top: 15rem;
+        justify-content: center;
+    }
+    .club__banner{
+        grid-area: banner;
+    }
+    .club__fun-text{
+        grid-area: title;
+        justify-content: left;
+    }
+    .club__fun-text h5{
+        padding: 0 .5em;
+    }
+    .club h3{
+        grid-area: text;
+        align-self: end;
+    }
+    .club button{
+        grid-area: button;
+    }
+    .club__tutorial{
+        grid-area: tutorial;
+        padding-top: 7rem;
+    }
+    .club__list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 1.5rem;
+    }
+
+}

@@ -1,0 +1,66 @@
+                    /* HERO */
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    line-height: normal;
+    row-gap: 4rem;
+    padding: 1rem;
+    padding-top: 3.5rem;
+    height: 80vh;
+}
+.hero__video{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    color: white;
+
+}
+
+        /* TABLET */
+@media(min-width: 720px){
+    .hero{
+        height: 70vh;
+        padding-top: 17.942rem;
+    }
+    .hero__video{
+        height: 37%;
+        width:80%;
+        align-self: center;
+    }
+    .hero__video img{
+        height:auto;
+    }
+}
+
+        /* PC  */
+@media(min-width: 1440px){
+    .hero{
+        display: grid;
+        grid-template-columns: 45% 55%;
+        grid-template-rows: 30% 15% 5%;
+        grid-template-areas: 
+        "title video"
+        "text video"
+        "button video";
+        column-gap: 5rem;
+        row-gap: 0;
+    }
+    .hero h1{
+        grid-area: title;
+        align-self: center;
+    }
+    .hero h2{
+        grid-area: text;
+    }
+    .hero button{
+        grid-area: button;
+        align-self: baseline;
+    }
+    .hero__video{
+        grid-area: video;
+        height: 80%;
+        width: 90%;
+    }
+}

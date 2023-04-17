@@ -1,0 +1,24 @@
+                    /* FOOTER  */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: var(--color-background-box);
+    border-top: 2px solid black;
+    width: 100vw;
+}
+.footer__box{
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+}
+.footer__list {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.footer__img__link {
+    width: 25px;
+    height: auto;
+}

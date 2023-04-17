@@ -1,0 +1,126 @@
+            /* Preset */
+
+:root{
+    --font-main: "Poppins";
+    --font-fun: 'DynaPuff', cursive;
+    --color-brand: #1F5410; 
+    --color-main: #38220B;
+    --color-background-box: #1D8F4A;
+    --color-background-box-transparent: rgba(29, 143, 74, .5); 
+    --color-border: #DBA64D;
+    --color-fun: #DBA64D;
+    --color-complement-light: #006185;
+    --color-complement-dark: #0B2C38;
+    --color-complement-dark-transparent: rgba(11, 44, 56, .5);
+    --box-shadow: 0 0 15px #DBA64D, 0 0 15px #38220B;
+    --button-shadow: 0 0 15px #DBA64D, 0 0 15px #38220B;
+    --color-background-button: #B8CAD4; 
+}
+body{
+    font-family: var(--font-main);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/background_05.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+h1{
+    font-family: var(--font-main);
+    font-size: 38px;
+    font-weight: 800;
+    text-shadow: var(--box-shadow);
+    color: white;    
+}
+h2{
+    font-family: var(--font-main);
+    font-size: 26px;
+    font-weight: 700;  
+    color: white;  
+}
+h3{
+    font-family: var(--font-main);
+    font-size: 16px;
+    font-weight: 500;
+    color: white;  
+    line-height: normal;
+}
+h4{
+    font-family: var(--font-main);
+    font-size: 20px;
+    font-weight: 400;
+    color: white;  
+    line-height:normal;
+}
+h5{
+    font-family: var(--font-fun);
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--color-fun);
+    text-shadow: var(--box-shadow);
+    
+}
+hr.style-four {
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px #DBA64D;
+}
+.button{
+    width:auto;
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: var(--color-background-button);
+    color: var(--color-main);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+                    /* MENU  */
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--color-brand);
+    align-items: center;
+    column-gap: 1rem;
+}
+.menu__logo{
+    width: auto;
+    height: 60px;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: var(--color-brand);
+    padding: 0.7rem;
+}
+.menu__item-media{
+    display: none;
+}
+.menu__item{
+    text-decoration: none;
+    color: var(--color-border);
+    font-weight: 800;
+}
+
+        /* TABLET */
+
+@media(min-width: 720px){
+    .menu__item-media{
+        display: block;
+        text-decoration: none;
+        color: var(--color-border);
+        font-weight: 800;
+    }
+}
+
+        /* PC  */
+@media(min-width: 1440px){
+    .menu{
+        justify-content: right;
+    }
+    .menu__item{
+        padding: 1rem;
+    }
+}
